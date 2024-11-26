@@ -17,6 +17,8 @@ body {
   color: #eee;
   font-family: Poppins, "sans-serif";
   font-size: 14px;
+  overflow-x: hidden;
+  padding-top: 0;
 }
 
 html,
@@ -26,5 +28,11 @@ body {
 
 a {
   text-decoration: none;
+  display: block;
   color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

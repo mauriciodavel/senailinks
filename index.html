@@ -9,14 +9,27 @@
 
   <body>
     <header>
-      <a href="#"><img src="./image/logo.png" alt="Logo" class="logo" /></a>
-      <nav>
-        <a href="#depoimento" class="active">Unidades SENAI</a>
-        <a href="#teste">Cursos Técnicos</a>
-        <a href="#">Agendamentos</a>
-        <a href="#">Services</a>
-        <a href="pages/solicitacao.html">Contact</a>
-      </nav>
+      <div id="header" class="container">
+        <a href="#"><img src="./image/logo.png" alt="Logo" class="logo" /></a>
+
+        <div id="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div id="menu-overlay"></div>
+
+        <nav aria-label="header-navigation">
+          <ul id="lista-menu">
+            <li class="item-menu"><a href="#" class="active">Unidades SENAI</a></li>
+            <li class="item-menu"><a href="#">Cursos Técnicos</a></li>
+            <li class="item-menu"><a href="pages/solicitacao.html">Agendamentos</a></li>
+            <li class="item-menu"><a href="#">Serviços</a></li>
+            <li class="item-menu"><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="slider">

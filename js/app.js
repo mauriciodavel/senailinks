@@ -43,3 +43,11 @@ function moveSlider(direction) {
         }
     }, {once: true}) // Remove the event listener after it's triggered once
 }
+
+function toggleMenu() {
+    const menu = document.getElementById('lista-menu');
+    const hamburger = document.getElementById('hamburger');
+    menu.classList.toggle('active')
+    hamburger.classList.toggle('active');  
+  }
+  
