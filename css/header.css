@@ -1,0 +1,44 @@
+header {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between; /* Mantém o espaço adequado entre logo e menu */
+  position: relative;
+  z-index: 100;
+  background-color: #ffffff; /* Adicione um fundo ao cabeçalho */
+  /*filter: brightness(175%) contrast(60%);*/
+}
+
+header .logo {
+  height: 40px; /* Ajuste o tamanho da logo */
+  margin-right: 20px; /* Espaço entre a logo e o menu */
+}
+
+header nav a {
+  color: #001aff;
+  margin-right: 5px;
+  padding: 5px 10px;
+  transition: 0.2s;
+  font-size: 20px; /* Defina um tamanho específico para o menu */
+}
+
+header a {
+  color: #eee;
+  margin-right: 5px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+
+a.active {
+  background: #ffffffff;
+  border-radius: 2px;
+}
+
+header a:hover {
+  background: #1e00fdff;
+  color: #eee;
+  border-radius: 2px;
+}
