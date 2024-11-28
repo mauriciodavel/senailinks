@@ -1,3 +1,103 @@
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  filter: contrast(175%) brightness(30%);
+}
+
+header {
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#lista-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-menu a {
+  color: #001aff;
+  margin-right: 5px;
+  padding: 5px 10px;
+  transition: 0.2s;
+  font-size: 1.300rem;
+  font-weight: bold;
+}
+
+.item-menu a:hover {
+  background: #1e00fdff;
+  color: #eee;
+  border-radius: 2px;
+}
+
+@media (width <= 768px) {
+  #lista-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+
+  .item-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  #lista-menu.active {
+    display: flex;
+  }
+
+  #hamburger {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  #hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #333;
+    transition: 0.4s;
+  }
+
+  #hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  #hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
 /* slider section  */
 .slider {
   height: 100vh;
@@ -53,7 +153,7 @@
   gap: 5px;
   margin-top: 20px;
 }
-.slider .list .item .button button {
+.slider .list .item .button a {
   border: none;
   background-color: #eee;
   font-family: Poppins;
@@ -61,9 +161,12 @@
   cursor: pointer;
   transition: 0.4s;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.slider .list .item .button button:hover {
+.slider .list .item .button a:hover {
   letter-spacing: 3px;
 }
 
@@ -74,6 +177,8 @@
 
 #info {
   font-size: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  line-height: 2;
 }
 
 /* nextPrevArrows Section  */
@@ -234,4 +339,30 @@
   .slider .list .item .content .title {
     font-size: 50px;
   }
+}
+
+/* Thumbnail Section  */
+.thumbnail {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+
+.thumbnail .item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }

@@ -5,24 +5,23 @@
     box-sizing: border-box;
 }
 
-/* Corpo da página */
-/* body {
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #000000;
     color: #333;
     padding: 20px;
-} */
+}
 
-/* Cabeçalho */
-/* header {
+ header {
     text-align: center;
     padding: 20px;
     background-color: #0044cc;
     color: white;
     border-radius: 10px;
     margin-bottom: 20px;
-} */
+}
 
 /* Container de Vagas */
 .job-container {
