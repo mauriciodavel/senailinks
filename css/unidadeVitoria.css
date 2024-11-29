@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 img {
@@ -228,6 +228,7 @@ header {
     opacity: 1;
   }
 }
+
 .slider .list .item:nth-child(1) .content .title {
   animation-delay: 0.4s !important;
 }
