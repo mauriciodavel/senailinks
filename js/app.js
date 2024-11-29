@@ -19,6 +19,9 @@ prevBtn.onclick = function() {
     moveSlider('prev')
 }
 
+setInterval(() => {
+    moveSlider('next') 
+}, 5000); 
 
 function moveSlider(direction) {
     let sliderItems = sliderList.querySelectorAll('.item')
