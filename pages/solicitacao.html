@@ -14,9 +14,8 @@
       </div>
       <h1>Solicitação de Agenda</h1>
       <form 
-        action="https://formsubmit.co/mdavel@findes.org.br"
         method="POST"
-        id="formAgenda"
+        id="myForm"
       >
         <label for="nome">Nome completo:</label>
         <input type="text" id="nome" name="nome" required />
@@ -51,6 +50,14 @@
 
         <label for="expectativas">Conte um pouco das suas expectativas:</label>
         <textarea id="expectativas" name="expectativas"></textarea>
+
+        <label for="">Unidade</label>
+        <select id="citySelect" name="city">
+          <option value="vitoria">Vitória</option>
+          <option value="vila_velha">Vila Velha</option>
+          <option value="serra">Serra</option>
+        </select>
+      
 
         <label for="curso">Selecione o curso:</label>
         <select id="curso" name="curso" required>
